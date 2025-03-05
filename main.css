@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00);
+    background-size: 300% 300%;
+    animation: backgroundMove 10s infinite alternate;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#time {
+    font-size: 2rem;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff00ff;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#time:hover {
+    transform: scale(1.1);
+}
+
+#taskName {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+.tasks-container {
+    width: 60%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    outline: none;
+    text-align: center;
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: all 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffcc00;
+}
+
+#tasks {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px #00ffff;
+    transition: transform 0.2s ease-in-out;
+    max-width: 90%;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.task:not(.completed):hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.completed {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.completed .done {
+    font-size: 1rem;
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.completed .start-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ffcc00, #ff00ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffcc00;
+    transition: all 0.3s ease-in-out;
+}
+
+.completed .start-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+.done {
+    font-size: 1rem;
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+}
