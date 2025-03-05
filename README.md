@@ -11,9 +11,8 @@
 
 ## 📸 Capturas de Pantalla
 
-![Pomodoro Timer UI](./screenshot.png)
-
-> *Nota:* Asegúrate de agregar una captura de pantalla real del proyecto.
+![Pomodoro Timer UI](![image](https://github.com/user-attachments/assets/29ba4429-580b-433e-be1f-10abaaa989ab)
+)
 
 ---
 
