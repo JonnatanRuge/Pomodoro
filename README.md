@@ -18,7 +18,7 @@
 
 ## 🚀 Instalación y Uso
 
-### 1️⃣ Clonar el repositorio
+###  Clonar el repositorio
 
 ```sh
 git clone https://github.com/JonnatanRuge/Pomodoro.git
