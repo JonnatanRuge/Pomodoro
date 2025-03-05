@@ -11,7 +11,8 @@
 
 ## 📸 Capturas de Pantalla
 
-![Pomodoro Timer UI](![image](https://github.com/user-attachments/assets/29ba4429-580b-433e-be1f-10abaaa989ab)
+![Pomodoro Timer UI](![pomodoro](https://github.com/user-attachments/assets/a9b65ed6-a86d-47d0-80bf-42ad51cb9d23)
+).
 )
 
 ---
